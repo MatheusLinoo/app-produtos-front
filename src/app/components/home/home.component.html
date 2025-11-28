@@ -4,7 +4,7 @@
     <h1>Bem-vindo à Loja Virtual Minsait</h1>
     <p>Explore a nossa loja virtual e descubra uma ampla variedade de produtos de alta qualidade.</p>
     <div class="hero-buttons">
-      <button class="btn btn-primary"><i class="fas fa-plus-circle"></i> Adicionar Produto</button>
+      <button class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i> Adicionar Produto</button>
       <button class="btn btn-outline">Saiba Mais</button>
     </div>
   </section>
@@ -22,22 +22,22 @@
         <p class="card-desc">{{ item.descricao }}</p>
 
         <button class="btn btn-cart" [disabled]="!item.ativo">
-          <i class="fas fa-shopping-cart"></i> Carrinho
+          <i class="fa-solid fa-cart-shopping"></i> Carrinho
         </button>
 
         <hr class="divider">
 
         <ul class="details-list">
           <li>
-            <i class="fab fa-bitcoin text-gold"></i> 
+            <i class="fa-solid fa-bitcoin-sign text-gold"></i> 
             <span>Preço: R$ {{ item.preco | number:'1.2-2' }}</span>
           </li>
           <li>
-            <i class="fas fa-tag text-gold"></i> 
+            <i class="fa-solid fa-tag text-gold"></i> 
             <span>Desconto: {{ item.desconto }}%</span>
           </li>
           <li>
-            <i class="fas fa-box text-gold"></i> 
+            <i class="fa-solid fa-box text-gold"></i> 
             <span>Estoque: {{ item.estoque }} unidades</span>
           </li>
         </ul>
