@@ -1,0 +1,48 @@
+<div class="container">
+  
+  <section class="hero">
+    <h1>Bem-vindo à Loja Virtual Minsait</h1>
+    <p>Explore a nossa loja virtual e descubra uma ampla variedade de produtos de alta qualidade.</p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary"><i class="fas fa-plus-circle"></i> Adicionar Produto</button>
+      <button class="btn btn-outline">Saiba Mais</button>
+    </div>
+  </section>
+
+  <div class="product-grid">
+    
+    <div class="card" *ngFor="let item of produtos" [class.disabled]="!item.ativo">
+      
+      <div class="card-image">
+        <img [src]="item.imagem" [alt]="item.titulo">
+      </div>
+
+      <div class="card-body">
+        <a href="#" class="card-title">{{ item.titulo }}</a>
+        <p class="card-desc">{{ item.descricao }}</p>
+
+        <button class="btn btn-cart" [disabled]="!item.ativo">
+          <i class="fas fa-shopping-cart"></i> Carrinho
+        </button>
+
+        <hr class="divider">
+
+        <ul class="details-list">
+          <li>
+            <i class="fab fa-bitcoin text-gold"></i> 
+            <span>Preço: R$ {{ item.preco | number:'1.2-2' }}</span>
+          </li>
+          <li>
+            <i class="fas fa-tag text-gold"></i> 
+            <span>Desconto: {{ item.desconto }}%</span>
+          </li>
+          <li>
+            <i class="fas fa-box text-gold"></i> 
+            <span>Estoque: {{ item.estoque }} unidades</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
