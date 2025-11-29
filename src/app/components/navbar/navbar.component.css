@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #242526; /* Cor do fundo do menu */
+  background-color: #2C3035; /* Cor do fundo do menu */
   border-bottom: 1px solid #3e4042;
   padding: 0.8rem 0;
   position: sticky;
@@ -9,8 +9,9 @@
 
 .navbar-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 40px;
 }
 
 .logo {
@@ -18,6 +19,7 @@
   flex-direction: column;
   line-height: 1.1;
   font-weight: bold;
+  margin-right: 20px;
 }
 
 .brand-minsait {

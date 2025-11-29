@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+/* Importando a fonte globalmente */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #202529; 
+  color: #e4e6eb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-home {
+  flex: 1;
+  display: block;
+}
